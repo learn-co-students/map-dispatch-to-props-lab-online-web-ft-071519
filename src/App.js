@@ -11,6 +11,15 @@ export class App extends Component {
       </div>
     );
   }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    addItem: () => {
+      dispatch(addItem())
+    }
+  };
 };
+
 
 export default App;
